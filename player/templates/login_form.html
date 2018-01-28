@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		My django app
+	</title>
+</head>
+<body>
+<h1>let's start</h1>
+
+<form role="form" action="{% url 'player_login' %}" method="post">
+
+	{% csrf_token %}
+	<p>Please login</p>
+	{{form}}
+	<button type="submit">Sign in</button>
+</form>
+</body>
+</html>
