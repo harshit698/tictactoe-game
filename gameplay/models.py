@@ -13,6 +13,7 @@ GAME_STATUS_CHOICES=(
 	('D','Draw')
 )
 
+
 class Game(models.Model):
 
 	first_player=models.ForeignKey(User,related_name="games_first_player")
